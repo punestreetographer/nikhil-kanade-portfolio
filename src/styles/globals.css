@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  @apply scroll-smooth;
+}
+
+body {
+  @apply bg-cream text-darkroom font-sans;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @apply font-serif font-bold;
+}
+
+.btn-primary {
+  @apply px-8 py-3 bg-frame-gold text-darkroom font-semibold hover:bg-opacity-90 transition-all duration-300 uppercase tracking-widest text-sm;
+}
+
+.btn-secondary {
+  @apply px-8 py-3 border-2 border-frame-gold text-frame-gold hover:bg-frame-gold hover:text-darkroom transition-all duration-300 uppercase tracking-widest text-sm;
+}
+
+.section-dark {
+  @apply bg-darkroom text-cream;
+}
+
+.section-light {
+  @apply bg-cream text-darkroom;
+}
+
+.heading-hero {
+  @apply text-heading-1 font-serif font-bold leading-tight;
+}
+
+.heading-page {
+  @apply text-heading-2 font-serif font-bold;
+}
+
+.heading-section {
+  @apply text-heading-3 font-serif font-bold;
+}
